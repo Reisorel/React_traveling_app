@@ -1,6 +1,5 @@
 import React from "react";
 import "./Home.css";
-import video from "../../Assets/video-1.mp4";
 import { GrLocation } from "react-icons/gr";
 import { FaFilter } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
@@ -11,10 +10,13 @@ import { TbApps } from "react-icons/tb";
 
 
 const Home = () => {
+
+  const video1 = "https://res.cloudinary.com/dqrq4ullu/video/upload/v1727705926/travel_agency_react/videos/green_water.mp4"
+
   return (
     <section className="home">
       <div className="overlay"></div>
-      <video src={video} muted autoPlay loop type="video/mp4"></video>
+      <video src={video1} muted autoPlay loop type="video/mp4"></video>
 
       <div className="homeContent container">
         <div className="textDiv">
