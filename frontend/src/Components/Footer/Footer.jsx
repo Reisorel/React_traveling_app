@@ -3,7 +3,12 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <section className="section">
+      <div className="videoDiv">
+        <video src=""></video>
+
+      </div>
+    </section>
   )
 }
 export default Footer
