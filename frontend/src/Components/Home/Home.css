@@ -1,7 +1,11 @@
 :root {
   --PrimaryColor: hsl(199, 100%, 33%);
   --SecondaryColor: hsl(187, 85%, 43%);
-  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --gradientColor: linear-gradient(
+    to right,
+    hsl(187, 85%, 43%),
+    hsl(199, 100%, 33%)
+  );
   --whiteColor: hsl(0, 0%, 100%);
   --blackColor: hsl(201, 33%, 16%);
   --textColor: hsl(240, 4%, 36%);
@@ -151,4 +155,35 @@
 }
 .home .homeContent .homeFooterIcons .icon:hover {
   color: var(--PrimaryColor);
+}
+
+@media screen and (min-width: 500px) {
+  .home .homeContent .textDiv .smallText {
+    font-size: 16px;
+  }
+  .home .homeContent .textDiv .homeTitle {
+    position: relative;
+    font-size: 2.3rem;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .home .homeContent .textDiv .homeTitle::after {
+    position: absolute;
+    content: "";
+    background: var(--SecondaryColor);
+    height: 5px;
+    width: 145px;
+    right: 0px;
+    bottom: 5px;
+    z-index: -1;
+  }
+  .home .homeContent .cardDiv {
+    grid-auto-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 660px) {
+  .home .homeContent .cardDiv {
+    padding: 2rem 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }/*# sourceMappingURL=Home.css.map */

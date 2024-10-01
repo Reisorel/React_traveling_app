@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./Footer.css";
 import { FiSend } from "react-icons/fi";
 import { MdOutlineTravelExplore } from "react-icons/md";
@@ -6,11 +6,17 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaChevronRight } from "react-icons/fa6";
-
+// Animation
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Footer = () => {
   const video2 =
     "https://res.cloudinary.com/dqrq4ullu/video/upload/v1727706009/travel_agency_react/videos/rocky_water_lm4w4w.mp4";
+
+    useEffect(()=>{
+      Aos.init({duration:1000})
+    }, [])
 
   return (
     <section className="footer">
@@ -20,14 +26,17 @@ const Footer = () => {
 
       <div className="secContent container">
         <div className="contactDiv flex">
-          <div className="text">
+          <div data-aos='fade-up'
+          className="text">
             <small>Restons en contact !</small>
             <h2>Voyagez avec nous!</h2>
           </div>
 
           <div className="inputDiv flex">
-            <input type="text" placeholder="Enter Email Adress" />
-            <button className="btn flex" type="submit">
+            <input data-aos='fade-up' type="text"
+            placeholder="Enter Email Adress" />
+            <button data-aos='fade-up'
+            className="btn flex" type="submit">
               ENVOYER <FiSend className="icon" />
             </button>
           </div>
@@ -40,11 +49,13 @@ const Footer = () => {
                 <MdOutlineTravelExplore className="icon" />BreizhTravel
               </a>
             </div>
-            <div className="footerParagraph">
+            <div data-aos='fade-up'
+            className="footerParagraph">
               Complétement.à.l'Ouest
             </div>
 
-            <div className="footerSocials flex">
+            <div data-aos='fade-up'
+            className="footerSocials flex">
               <FaFacebook className="icon" />
               <FaInstagram className="icon" />
               <FaSquareXTwitter className="icon" />
@@ -53,7 +64,10 @@ const Footer = () => {
 
           <div className="footerLinks grid">
             {/* Groupe-1 */}
-            <div className="linkGroup">
+            <div data-aos='fade-up'
+            data-aos-duration='3000'
+
+            className="linkGroup">
               <span className="groupTitle">
                 NOTRE AGENCE
               </span>
@@ -85,7 +99,9 @@ const Footer = () => {
 
             </div>
             {/* Groupe-2 */}
-            <div className="linkGroup">
+            <div data-aos='fade-up'
+            data-aos-duration='4000'
+            className="linkGroup">
               <span className="groupTitle">
                 PARTENAIRES
               </span>
@@ -117,7 +133,9 @@ const Footer = () => {
 
             </div>
             {/* Groupe-3 */}
-            <div className="linkGroup">
+            <div data-aos='fade-up'
+            data-aos-duration='5000'
+            className="linkGroup">
               <span className="groupTitle">
                 DERNIERE MINUTE
               </span>

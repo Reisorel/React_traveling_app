@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./Home.css";
 import { GrLocation } from "react-icons/gr";
 import { FaFilter } from "react-icons/fa";
@@ -7,27 +7,39 @@ import { FaInstagram } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { BsListTask } from "react-icons/bs";
 import { TbApps } from "react-icons/tb";
+// Animation
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 
 const Home = () => {
 
   const video1 = "https://res.cloudinary.com/dqrq4ullu/video/upload/v1727705926/travel_agency_react/videos/green_water.mp4"
 
+  useEffect(()=>{
+    Aos.init({duration:1000})
+  }, [])
+
   return (
     <section className="home">
       <div className="overlay"></div>
       <video src={video1} muted autoPlay loop type="video/mp4"></video>
 
-      <div className="homeContent container">
+      <div className ="homeContent container">
         <div className="textDiv">
-          <span className="smallText">Nos offres !</span>
 
-          <h1 className="homeTitle">
+          <span data-aos='fade-up'
+          className="smallText">Nos offres !</span>
+
+          <h1 data-aos='fade-up'
+          className="homeTitle">
             Cherchez votre prochaine destination à l'ouest !
           </h1>
         </div>
 
-        <div className="cardDiv grid">
+        <div
+        data-aos='fade-up'
+        className="cardDiv grid">
 
           <div className="destinationInput">
             <label htmlFor="city">Cherchez votre destination:</label>
@@ -61,7 +73,8 @@ const Home = () => {
           </div>
 
         </div>
-     <div className="homeFooterIcons flex">
+     <div data-aos='fade-up'
+     className="homeFooterIcons flex">
       <div className="rightIcons">
       <FaFacebook className="icon" />
       <FaInstagram className="icon" />

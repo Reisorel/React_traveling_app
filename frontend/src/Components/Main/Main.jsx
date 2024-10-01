@@ -1,5 +1,8 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./Main.css";
+// Animation
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 //Icons
 import { FaLocationDot } from "react-icons/fa6";
@@ -111,17 +114,25 @@ const Data = [
 ];
 
 const Main = () => {
+
+  useEffect(()=>{
+    Aos.init({duration:2000})
+  }, [])
+
   return (
     <section className="main container section">
       <div className="secTitle">
-        <h3 className="title">Nos coups de coeur du moment</h3>
+        <h3 data-aos='fade-right' data-aos-duration='4000'
+        className="title">Nos coups de coeur du moment</h3>
       </div>
 
       <div className="secContent grid">
         {Data.map(
           ({ id, imgSrc, destTitle, location, grade, fees, description }) => {
             return (
-              <div key={id} className="singleDestination">
+              <div key={id}
+              data-aos='fade-up'
+              className="singleDestination">
                 <div className="imageDiv">
                   <img src={imgSrc} alt={destTitle} />
                 </div>
