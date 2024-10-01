@@ -1,21 +1,21 @@
 import React from "react";
 import "./Main.css";
 
-//Medias
-
-import bzh1 from "../../Assets/bzh-1.jpg";
-import bzh2 from "../../Assets/bzh-2.jpg";
-import bzh3 from "../../Assets/bzh-3.jpg";
-import bzh4 from "../../Assets/bzh-4.jpg";
-import bzh5 from "../../Assets/bzh-5.jpg";
-import bzh6 from "../../Assets/bzh-6.jpg";
-import bzh7 from "../../Assets/bzh-7.jpg";
-import bzh8 from "../../Assets/bzh-8.jpg";
-import bzh9 from "../../Assets/bzh-9.jpg";
-
 //Icons
 import { FaLocationDot } from "react-icons/fa6";
 import { FaClipboardCheck } from "react-icons/fa6";
+
+//Medias
+const bzh1 = "https://res.cloudinary.com/dqrq4ullu/image/upload/v1727765487/travel_agency_react/photos/bzh1.jpg";
+const bzh2 = "https://res.cloudinary.com/dqrq4ullu/image/upload/v1727765487/travel_agency_react/photos/bzh2.jpg";
+const bzh3 = "https://res.cloudinary.com/dqrq4ullu/image/upload/v1727765487/travel_agency_react/photos/bzh3.jpg";
+const bzh4 = "https://res.cloudinary.com/dqrq4ullu/image/upload/v1727765487/travel_agency_react/photos/bzh4.jpg";
+const bzh5 = "https://res.cloudinary.com/dqrq4ullu/image/upload/v1727765487/travel_agency_react/photos/bzh5.jpg";
+const bzh6 = "https://res.cloudinary.com/dqrq4ullu/image/upload/v1727765487/travel_agency_react/photos/bzh6.jpg";
+const bzh7 = "https://res.cloudinary.com/dqrq4ullu/image/upload/v1727765487/travel_agency_react/photos/bzh7.jpg";
+const bzh8 = "https://res.cloudinary.com/dqrq4ullu/image/upload/v1727765487/travel_agency_react/photos/bzh8.jpg";
+const bzh9 = "https://res.cloudinary.com/dqrq4ullu/image/upload/v1727765487/travel_agency_react/photos/bzh9.jpg";
+
 
 const Data = [
   {
