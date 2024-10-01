@@ -186,4 +186,32 @@
     padding: 2rem 1rem;
     grid-template-columns: repeat(3, 1fr);
   }
+}
+@media screen and (min-width: 940px) {
+  .home {
+    height: 70vh;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .home {
+    height: 80vh;
+  }
+  .home .homeContent {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .home .homeContent .cardDiv {
+    padding: 2rem 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .home .homeContent .cardDiv .input {
+    margin-bottom: 1rem;
+  }
+  .home .homeContent .cardDiv .searchOptions {
+    bottom: -1rem;
+    padding: 8px 1rem;
+  }
+  .home .homeContent .cardDiv .searchOptions span {
+    font-size: 17px;
+  }
 }/*# sourceMappingURL=Home.css.map */
