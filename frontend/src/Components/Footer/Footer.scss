@@ -193,18 +193,117 @@
           }
         }
       }
-      .footerDiv{
+      .footerDiv {
         flex-direction: column;
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
         background: var(--SecondaryColor);
-        padding: .5rem 2rem;
+        padding: 0.5rem 2rem;
 
-        small{
+        small {
           font-size: 10px;
-          color: var(--whiteColor)
+          color: var(--whiteColor);
+        }
+      }
+    }
+  }
+}
+
+// media queries
+
+@media screen and (min-width: 500px) {
+  .footer {
+    .secContent {
+      .footerCard {
+        .footerLinks {
+          grid-template-columns: repeat(3, 1fr);
+          padding-bottom: 1rem;
+        }
+        .footerDiv {
+          justify-content: space-between;
+          flex-direction: row;
+
+          small {
+            font-size: 14px;
+            color: var(--whiteColor);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 660px) {
+  .footer {
+    .secContent {
+      .contactDiv {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .inputDiv {
+          width: max-content;
+          flex-direction: row;
+          justify-content: flex-center;
+
+          input {
+            width: 60%;
+          }
+          .btn {
+            width: max-content;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 840px) {
+  .footer {
+    padding: 5rem 0;
+    .secContent {
+      .footerCard {
+        flex-direction: row;
+        .footerLinks {
+          grid-template-columns: repeat(3, 1fr);
+          padding-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    .setContent {
+      .footerCard {
+        padding: 3rem 1rem;
+        .footerIntro{
+          .footerParagraph{
+            font-size: 15px;
+            color: var(--textColor)
+          }
+          .footerSocials{
+            column-gap: .5rem;
+            .icon{
+              color: var(--textColor);
+              font-size: 25px;
+              &:hover{
+                color: var(--PrimaryColor)
+              }
+            }
+          }
+        }
+        .footerLinks{
+          .linkGroup{
+            .footerList{
+              font-size: 16px;
+              padding: 5px 0;
+
+
+            }
+          }
         }
       }
     }

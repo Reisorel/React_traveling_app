@@ -51,7 +51,7 @@ const Footer = () => {
             </div>
             <div data-aos='fade-up'
             className="footerParagraph">
-              Complétement.à.l'Ouest
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque maxime fugit nulla explicabo, porro rerum placeat sapiente error distinctio numquam.
             </div>
 
             <div data-aos='fade-up'

@@ -65,13 +65,14 @@
   .header .navBar .navLists .navItem {
     padding: 0.5rem 0;
   }
-  .header .navBar .navLists .navItem .navlink {
+  .header .navBar .navLists .navItem .navLink {
     color: var(--textColor);
     font-size: 0.9rem;
     font-weight: 600;
   }
-  .header .navBar .navLists .navItem .navlink:hover {
+  .header .navBar .navLists .navItem .navLink:hover {
     color: var(--PrimaryColor);
+    cursor: pointer;
   }
   .header .navBar .navLists .btn {
     margin-top: 1rem;
@@ -123,6 +124,7 @@
   }
   .header .navBar .navLists .navItem .navLink:hover {
     color: var(--PrimaryColor);
+    cursor: pointer;
   }
   .header .navBar .navLists .btn {
     margin-left: 1rem;

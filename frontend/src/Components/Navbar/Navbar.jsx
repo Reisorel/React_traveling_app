@@ -1,98 +1,102 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { MdOutlineTravelExplore } from "react-icons/md";
 import { IoCloseCircleSharp } from "react-icons/io5";
 import { PiDotsNine } from "react-icons/pi";
-
+import { Link } from "react-router-dom"; // Import du composant Link
+import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
-
-  const [active, setActive] = useState('navBar');
+  const [active, setActive] = useState("navBar");
 
   const showNav = () => {
-    setActive('navBar activeNavbar')
-  }
+    setActive("navBar activeNavbar");
+  };
 
   const removeNav = () => {
-    setActive('navBar')
-  }
-
+    setActive("navBar");
+  };
 
   return (
     <section className="navBarSection">
       <header className="header flex">
         <div className="logoDiv">
-          <a href="#" className="logo flex">
+          {/* Utiliser Link au lieu de <a> pour naviguer à la page d'accueil */}
+          <Link to="/" className="logo flex" onClick={removeNav}>
             <h1>
               <MdOutlineTravelExplore className="icon" />
               BreizhTravel.
             </h1>
-          </a>
+          </Link>
         </div>
 
         <div className={active}>
           <ul className="navLists flex">
-
             <li className="navItem">
-              <a href="#" className="navLink">
+              {/* Utiliser Link pour naviguer à la page d'accueil */}
+              <Link to="/" className="navLink" onClick={removeNav}>
                 Home
-              </a>
+              </Link>
             </li>
 
             <li className="navItem">
-              <a href="#" className="navLink">
+              <Link to="/packages" className="navLink" onClick={removeNav}>
                 Packages
-              </a>
+              </Link>
             </li>
 
             <li className="navItem">
-              <a href="#" className="navLink">
-                Shop
-              </a>
+              <Link to="/boutique" className="navLink" onClick={removeNav}>
+                Boutique
+              </Link>
             </li>
 
             <li className="navItem">
-              <a href="#" className="navLink">
-                About
-              </a>
+              <Link to="/about" className="navLink" onClick={removeNav}>
+                A Propos
+              </Link>
             </li>
 
             <li className="navItem">
-              <a href="#" className="navLink">
+              <Link to="/pages" className="navLink" onClick={removeNav}>
                 Pages
-              </a>
+              </Link>
             </li>
 
             <li className="navItem">
-              <a href="#" className="navLink">
-                News
-              </a>
+              <Link to="/actualites" className="navLink" onClick={removeNav}>
+                Acutalités
+              </Link>
             </li>
 
             <li className="navItem">
-              <a href="#" className="navLink">
+              <ScrollLink
+                to="footer"
+                className="navLink"
+                smooth={true}
+                duration={500}
+                onClick={removeNav}
+              >
                 Contact
-              </a>
+              </ScrollLink>
             </li>
 
-            <button className="btn">
-              <a href="#">BOOK NOW</a>
+            <button className="btn" onClick={removeNav}>
+              <Link to="/book">Réservez maintenant !</Link>
             </button>
           </ul>
 
-          <div onClick={removeNav}
-          className="closeNavbar">
+          <div onClick={removeNav} className="closeNavbar">
             <IoCloseCircleSharp className="icon" />
           </div>
         </div>
 
-        <div onClick={showNav}
-        className="toggleNavbar">
-          <PiDotsNine className="icon"/>
+        <div onClick={showNav} className="toggleNavbar">
+          <PiDotsNine className="icon" />
         </div>
-
       </header>
     </section>
   );
 };
+
 export default Navbar;
