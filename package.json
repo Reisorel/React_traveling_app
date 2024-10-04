@@ -4,7 +4,8 @@
   "description": "Full-stack React and Express application",
   "scripts": {
     "start": "node backend/server.js",
-    "heroku-postbuild": "cd frontend && npm ci && npm run build"
+    "heroku-postbuild": "cd frontend && npm ci && npm run build",
+    "postinstall": "cd frontend && npm install"
   },
   "dependencies": {
     "express": "^4.21.0"
