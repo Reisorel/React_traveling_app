@@ -1,6 +1,9 @@
 const express = require('express');
+const cors = require('cors');
 const path = require('path');
 const app = express();
+
+app.use(cors());
 
 const buildPath = path.join(__dirname, '../frontend/dist');  // Changez "dist" par "build" si nécessaire
 

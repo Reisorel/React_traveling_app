@@ -1,6 +1,15 @@
 {
+  "name": "travelwordwide",
+  "version": "1.0.0",
+  "description": "Full-stack React and Express application",
+  "scripts": {
+    "start": "node backend/server.js",  // Utilise le chemin correct pour démarrer le serveur
+    "heroku-postbuild": "cd frontend && npm install && npm run build"  // Aller dans le dossier frontend pour construire le build
+  },
   "dependencies": {
-    "express": "^4.21.0",
-    "react-router-dom": "^6.26.2"
+    "express": "^4.21.0"  // Garde uniquement les dépendances backend ici
+  },
+  "engines": {
+    "node": "16.x"  // (Optionnel) Assure-toi que la version de Node.js est compatible avec Heroku
   }
 }
