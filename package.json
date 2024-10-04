@@ -4,7 +4,7 @@
   "description": "Full-stack React and Express application",
   "scripts": {
     "start": "node backend/server.js",
-    "heroku-postbuild": "cd frontend && npm install && npm run build"
+    "heroku-postbuild": "cd frontend && npm ci && npm run build"
   },
   "dependencies": {
     "express": "^4.21.0"
@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@eslint/config-array": "^0.18.0",
-    "eslint": "^8.57.1",           
+    "eslint": "^8.57.1",
     "eslint-plugin-react": "^7.37.1",
     "eslint-plugin-react-hooks": "^4.6.2"
   }
