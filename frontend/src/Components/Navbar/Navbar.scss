@@ -65,12 +65,13 @@
         .navItem {
           padding: 0.5rem 0;
 
-          .navlink {
+          .navLink {
             color: var(--textColor);
             font-size: 0.9rem;
             font-weight: 600;
             &:hover {
               color: var(--PrimaryColor);
+              cursor: pointer;
             }
           }
         }
@@ -132,6 +133,7 @@
 
             &:hover {
               color: var(--PrimaryColor);
+              cursor: pointer;
             }
           }
         }

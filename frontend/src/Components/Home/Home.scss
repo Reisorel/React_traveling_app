@@ -175,17 +175,17 @@
         .homeTitle {
           position: relative;
           font-size: 2.3rem;
-          width: max-content;
+          // width: max-content;
 
           &::after {
-            position: absolute;
-            content: "";
-            background: var(--SecondaryColor);
-            height: 5px;
-            width: 145px;
-            right: 0px;
-            bottom: 5px;
-            z-index: -1;
+            // position: absolute;
+            // content: "";
+            // background: var(--SecondaryColor);
+            // height: 5px;
+            // width: 145px;
+            // right: 0px;
+            // bottom: 5px;
+            // z-index: -1;
           }
         }
       }
@@ -209,13 +209,13 @@
 
 @media screen and (min-width: 940px) {
   .home {
-    height: 70vh;
+    height: 100vh;
   }
 }
 
 @media screen and (min-width: 1240px) {
   .home {
-    height: 80vh;
+    height: 100vh;
 
     .homeContent{
       padding-left: 0;

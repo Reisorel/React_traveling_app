@@ -164,18 +164,6 @@
   .home .homeContent .textDiv .homeTitle {
     position: relative;
     font-size: 2.3rem;
-    width: -moz-max-content;
-    width: max-content;
-  }
-  .home .homeContent .textDiv .homeTitle::after {
-    position: absolute;
-    content: "";
-    background: var(--SecondaryColor);
-    height: 5px;
-    width: 145px;
-    right: 0px;
-    bottom: 5px;
-    z-index: -1;
   }
   .home .homeContent .cardDiv {
     grid-auto-columns: repeat(2, 1fr);
@@ -189,12 +177,12 @@
 }
 @media screen and (min-width: 940px) {
   .home {
-    height: 70vh;
+    height: 100vh;
   }
 }
 @media screen and (min-width: 1240px) {
   .home {
-    height: 80vh;
+    height: 100vh;
   }
   .home .homeContent {
     padding-left: 0;
