@@ -21,7 +21,6 @@ const Navbar = () => {
     <section className="navBarSection">
       <header className="header flex">
         <div className="logoDiv">
-          {/* Utiliser Link au lieu de <a> pour naviguer à la page d'accueil */}
           <Link to="/" className="logo flex" onClick={removeNav}>
             <h1>
               <MdOutlineTravelExplore className="icon" />
@@ -33,7 +32,6 @@ const Navbar = () => {
         <div className={active}>
           <ul className="navLists flex">
             <li className="navItem">
-              {/* Utiliser Link pour naviguer à la page d'accueil */}
               <Link to="/" className="navLink" onClick={removeNav}>
                 Home
               </Link>

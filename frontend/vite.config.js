@@ -1,21 +1,15 @@
+// vite.config.js
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react-swc';
-import { resolve } from 'path';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  root: '.',  // Définit "public" comme racine pour le serveur de développement
-  base: '/',         // Définit la base des chemins relatifs
-
+  plugins: [react()],
+  root: '.', // Assurez-vous que le root soit le dossier actuel
+  publicDir: 'public',
   build: {
-    outDir: resolve(__dirname, '../dist'), // Changez ici pour indiquer le bon dossier de sortie
-    emptyOutDir: true,                     // Vide le dossier de sortie avant chaque build
+    outDir: 'dist',
     rollupOptions: {
-      input: resolve(__dirname, 'public/index.html'), // Spécifie le chemin absolu vers index.html
+      input: 'index.html', // Spécifie l'emplacement de index.html
     },
-  },
-
-  server: {
-    port: 5173,        // Définit le port du serveur de développement
-    open: true,        // Ouvre le navigateur automatiquement
   },
 });
