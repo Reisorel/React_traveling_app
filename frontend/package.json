@@ -13,16 +13,16 @@
     "@cloudinary/react": "^1.33.0",
     "@cloudinary/url-gen": "^1.36.0",
     "aos": "^2.3.4",
-    "react": "^18.2.0",  // Utilisation de la version stable actuelle
-    "react-dom": "^18.2.0",  // Idem pour react-dom
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-icons": "^5.3.0",
     "react-router-dom": "^6.26.2",
     "react-scroll": "^1.9.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
-    "@types/react": "^18.2.14",  // Dernière version pour @types/react
-    "@types/react-dom": "^18.2.7",  // Dernière version pour @types/react-dom
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.7",  
     "@vitejs/plugin-react": "^4.3.2",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "eslint": "^9.9.0",
