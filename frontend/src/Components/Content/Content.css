@@ -59,16 +59,17 @@
   transition: 0.3s ease;
 }
 .main .secContent .singleDestination .imageDiv {
-  height: auto;
-  width: auto;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
+  margin: 0px;
 }
 .main .secContent .singleDestination .imageDiv img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  transform: 2s eases;
+  transition: transform 2s ease;
 }
 .main .secContent .singleDestination .imageDiv:hover img {
   transform: scale(1.1);

@@ -12,7 +12,7 @@ import 'aos/dist/aos.css'
 
 const Footer = () => {
   const video2 =
-    "https://res.cloudinary.com/dqrq4ullu/video/upload/v1727706009/travel_agency_react/videos/rocky_water_lm4w4w.mp4";
+    "https://res.cloudinary.com/dqrq4ullu/video/upload/f_auto,q_auto/v1727706009/travel_agency_react/videos/rocky_water_lm4w4w.mp4";
 
     useEffect(()=>{
       Aos.init({duration:1000})

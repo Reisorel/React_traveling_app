@@ -14,7 +14,7 @@ import 'aos/dist/aos.css'
 
 const Home = () => {
 
-  const video1 = "https://res.cloudinary.com/dqrq4ullu/video/upload/v1727705926/travel_agency_react/videos/green_water.mp4"
+  const video1 = "https://res.cloudinary.com/dqrq4ullu/video/upload/f_auto,q_auto/v1727705926/travel_agency_react/videos/green_water.mp4"
 
   useEffect(()=>{
     Aos.init({duration:1000})

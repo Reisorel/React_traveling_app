@@ -9,16 +9,15 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaClipboardCheck } from "react-icons/fa6";
 
 //Medias
-const bzh1 = "https://res.cloudinary.com/dqrq4ullu/image/upload/v1727765487/travel_agency_react/photos/bzh1.jpg";
-const bzh2 = "https://res.cloudinary.com/dqrq4ullu/image/upload/v1727765487/travel_agency_react/photos/bzh2.jpg";
-const bzh3 = "https://res.cloudinary.com/dqrq4ullu/image/upload/v1727765487/travel_agency_react/photos/bzh3.jpg";
-const bzh4 = "https://res.cloudinary.com/dqrq4ullu/image/upload/v1727765487/travel_agency_react/photos/bzh4.jpg";
-const bzh5 = "https://res.cloudinary.com/dqrq4ullu/image/upload/v1727765487/travel_agency_react/photos/bzh5.jpg";
-const bzh6 = "https://res.cloudinary.com/dqrq4ullu/image/upload/v1727765487/travel_agency_react/photos/bzh6.jpg";
-const bzh7 = "https://res.cloudinary.com/dqrq4ullu/image/upload/v1727765487/travel_agency_react/photos/bzh7.jpg";
-const bzh8 = "https://res.cloudinary.com/dqrq4ullu/image/upload/v1727765487/travel_agency_react/photos/bzh8.jpg";
-const bzh9 = "https://res.cloudinary.com/dqrq4ullu/image/upload/v1727765487/travel_agency_react/photos/bzh9.jpg";
-
+const bzh1 = "https://res.cloudinary.com/dqrq4ullu/image/upload/ar_4:3,c_fill,f_auto,g_auto,h_375,q_auto,w_500/v1727765487/travel_agency_react/photos/bzh1.jpg";
+const bzh2 = "https://res.cloudinary.com/dqrq4ullu/image/upload/ar_4:3,c_fill,f_auto,g_auto,h_375,q_auto,w_500/v1727765499/travel_agency_react/photos/bzh2.jpg";
+const bzh3 = "https://res.cloudinary.com/dqrq4ullu/image/upload/ar_4:3,c_fill,f_auto,g_auto,h_375,q_auto,w_500/v1727765487/travel_agency_react/photos/bzh3.jpg";
+const bzh4 = "https://res.cloudinary.com/dqrq4ullu/image/upload/ar_4:3,c_fill,f_auto,g_auto,h_375,q_auto,w_500/v1727765486/travel_agency_react/photos/bzh4.jpg";
+const bzh5 = "https://res.cloudinary.com/dqrq4ullu/image/upload/ar_4:3,c_fill,f_auto,g_auto,h_375,q_auto,w_500/v1727765486/travel_agency_react/photos/bzh5.jpg";
+const bzh6 = "https://res.cloudinary.com/dqrq4ullu/image/upload/ar_4:3,c_fill,f_auto,g_auto,h_375,q_auto,w_500/v1727765489/travel_agency_react/photos/bzh6.jpg";
+const bzh7 = "https://res.cloudinary.com/dqrq4ullu/image/upload/ar_4:3,c_fill,f_auto,g_auto,h_375,q_auto,w_500/v1727765486/travel_agency_react/photos/bzh7.jpg";
+const bzh8 = "https://res.cloudinary.com/dqrq4ullu/image/upload/ar_4:3,c_fill,f_auto,g_auto,h_375,q_auto,w_500/v1727765487/travel_agency_react/photos/bzh8.jpg";
+const bzh9 = "https://res.cloudinary.com/dqrq4ullu/image/upload/ar_4:3,c_fill,f_auto,g_auto,h_375,q_auto,w_500/v1727765488/travel_agency_react/photos/bzh9.jpg";
 
 const Data = [
   {
