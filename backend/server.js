@@ -15,18 +15,16 @@ sequelize
   .then(async () => {
     console.log("Testing databases");
 
-    // defineAssociations();
-
-    // try {
-    //   const reservation = await Reservations.findOne();
-    //   if (room) {
-    //     console.log("Table 'Reservations' loaded !");
-    //   } else {
-    //     console.log("Table 'Reservations' loaded but not data found.");
-    //   }
-    // } catch (error) {
-    //   console.error("Error accessing 'Reservations' table :", error);
-    // }
+    try {
+      const reservation = await Reservations.findOne();
+      if (reservation) {
+        console.log("Table 'Reservations' loaded !");
+      } else {
+        console.log("Table 'Reservations' loaded but not data found.");
+      }
+    } catch (error) {
+      console.error("Error accessing 'Reservations' table :", error);
+    }
 
   })
 
