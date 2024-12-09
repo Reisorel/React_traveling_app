@@ -118,7 +118,7 @@ const Footer = () => {
 
               <li className="footerList flex">
               <FaChevronRight className="icon"/>
-              HostelWordld
+              HostelWorld
               </li>
 
               <li className="footerList flex">

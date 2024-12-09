@@ -8,17 +8,20 @@
     "postinstall": "cd frontend && npm install"
   },
   "dependencies": {
+    "@vitejs/plugin-react": "^4.3.2",
     "express": "^4.21.0",
-    "@vitejs/plugin-react": "^4.3.2"
+    "pg": "^8.13.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.5"
   },
   "engines": {
     "node": ">=22.0.0"
   },
   "devDependencies": {
-    "vite": "^5.4.8",
     "@eslint/config-array": "^0.18.0",
     "eslint": "^8.57.1",
     "eslint-plugin-react": "^7.37.1",
-    "eslint-plugin-react-hooks": "^4.6.2"
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "vite": "^5.4.8"
   }
 }
