@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "lerosier",
+    "password": "",
+    "database": "breizh-travel",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "lerosier",
+    "password": "",
+    "database": "breizh-travel",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "lerosier",
+    "password": "",
+    "database": "breizh-travel",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
