@@ -19,8 +19,8 @@ router.put('/travels/:id', TravelsController.updateTravel);
 
 // Routes for reservations
 router.get('/reservations', ReservationsController.getAllReservations)
-// router.post('/reservations', ReservationsController.createReservation)
-// router.delete('/reservations/:id', ReservationsController.deleteReservation);
-// router.put('/reservations/:id', ReservationsController.updateReservation);
+router.post('/reservations', ReservationsController.createReservation)
+router.delete('/reservations/:id', ReservationsController.deleteReservation);
+router.put('/reservations/:id', ReservationsController.updateReservation);
 
 module.exports = router;

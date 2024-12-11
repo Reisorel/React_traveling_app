@@ -11,7 +11,7 @@ const Reservations = sequelize.define(
       allowNull: false,
     },
     status: {
-      type: DataTypes.ENUM("planned", "completed", "canceled"),
+      type: DataTypes.ENUM("pending", "accepted", "declined"),
       allowNull: true, // Peut être NULL si le statut n'est pas encore défini
     },
     travel_id: {
@@ -43,4 +43,3 @@ const Reservations = sequelize.define(
 );
 
 module.exports = Reservations;
-
